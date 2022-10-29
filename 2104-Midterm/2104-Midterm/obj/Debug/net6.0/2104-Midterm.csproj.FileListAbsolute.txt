@@ -1,0 +1,15 @@
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\bin\Debug\net6.0\2104-Midterm.exe
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\bin\Debug\net6.0\2104-Midterm.deps.json
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\bin\Debug\net6.0\2104-Midterm.runtimeconfig.json
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\bin\Debug\net6.0\2104-Midterm.dll
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\bin\Debug\net6.0\2104-Midterm.pdb
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.csproj.AssemblyReference.cache
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.GeneratedMSBuildEditorConfig.editorconfig
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.AssemblyInfoInputs.cache
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.AssemblyInfo.cs
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.csproj.CoreCompileInputs.cache
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.dll
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\refint\2104-Midterm.dll
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.pdb
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\2104-Midterm.genruntimeconfig.cache
+D:\2022-3\2104-Midterm\2104-Midterm\2104-Midterm\obj\Debug\net6.0\ref\2104-Midterm.dll
