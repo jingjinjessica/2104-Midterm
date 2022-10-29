@@ -41,23 +41,19 @@ namespace _2104_Midterm.MembershipSystem
            
          }
 
-     
 
-
-
-        public Employee Get(string id)
+        public  Employee Get(string id)
         {
-
-          
-          var k =  Employee.Where(e => e.ID == id);
-
+            List<Employee> employees = new List<Employee>();
+            var item  = employees.Find(x => x.ID == id);
+            return item ;
+    
         }
 
         public List<Employee> Get(string FirstName, string LastName)
         {
-            throw new NotImplementedException();
+            var employee = new List<Employee>();
+            return employee;
         }
-
-       
     }
 }

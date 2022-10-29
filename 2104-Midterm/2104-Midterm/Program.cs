@@ -12,7 +12,7 @@ namespace _2104_Midterm
     {
         static void Main(string[] args)
         {
-            new Program().Add(new Employee()
+            /*new Program().Add(new Employee()
             {
                 ID = "001",
                 FirstName = "Jin",
@@ -20,7 +20,7 @@ namespace _2104_Midterm
                 DateCreated = 2010,
                 Email = "jj@email",
                 DepartmentID = "M001"
-            });
+            });*/
 
             /*new Program().Add(new Employee()
             {
@@ -33,6 +33,7 @@ namespace _2104_Midterm
             });
 */
             //new Program().Delete("001");
+            new Program().Get("001");
         }
 
         
