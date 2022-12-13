@@ -14,6 +14,10 @@ To submit your answers:
  - Put the github link to the file and attach a copy of your text file to the email.
 =====================================================================================
 
+github link:
+https://github.com/jingjinjessica/2104-Midterm/tree/main/2104-Midterm/2104-Midterm/Final
+
+
 1 - Define a delegate that accepts a two strings and returns a boolean.
 Answer:
 	delegate bool StringSamedelegate(s1 s2);
