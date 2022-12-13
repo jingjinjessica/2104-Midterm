@@ -1,0 +1,314 @@
+2104 - Final Exam - December 2022
+=================================
+
+Instructions - please read carefully
+====================================
+Exam is closed notes, books and internet.
+You are only allowed to use a text editor such as Notepad or Notepad++ to answer the questions.
+Do not use Visual Studio or any other code IDE.
+Write all answers to a Text file.
+Name the file as 2104-FinalExam-Dec2022-[YourFullName].Txt
+To submit your answers: 
+ - Add the text file to your GutHub repoaitory 
+ - Prepare an email to send to: george.bekari@gmail.com 
+ - Put the github link to the file and attach a copy of your text file to the email.
+=====================================================================================
+
+1 - Define a delegate that accepts a two strings and returns a boolean.
+Answer:
+	delegate bool StringSamedelegate(s1 s2);
+	StringSamedelegate Same = new StringSamedelegate( stringSame);
+	public bool stringSame(s1 s2)
+	{
+		if(s1 == s2)
+		{ 
+			return true;}
+		else
+		{
+			return false;}
+
+	}
+
+2 - Write a function that compares two strings for equality AreEqual(..) and returns true if the two strings are equal and false otherwise.
+    Write a second function that uses the delegate to call AreEqual(..)
+Answer:
+
+class Program
+{
+	public static void Main(string[] args)
+	{
+		new Program().Question2(); 
+	}
+
+	private void AreEqual()
+	{
+		string s1 = "JingJin";
+		string s2 = "JingJin"
+		Console.WriteLine(s1.Equals(s2));
+	}
+	delegate bool AreEqual(s1 s2);
+	AreEqual Same = new AreEqual( stringSame);
+	public bool stringSame(s1 s2)
+	{
+		if(s1 == s2)
+		{ 
+			return true;}
+		else
+		{
+			return false;}
+
+	}
+}
+
+
+3 - Name the three WinUI layout panels. 
+    Write the Xaml for each panel type placing a Rectangle of height 20 and width 20 in them.
+Answer:
+	<Grid>
+		<Rectangle  Height="20"  Width="20"/>
+	</Grid>
+
+	<RelativePanel>
+		<Rectangle  Height="20"  Width="20"/>	
+	</RelativePanel>
+
+	<StackPanel>
+		<Rectangle  Height="20"  Width="20"/>
+	</StackPanel>
+	
+
+4 - Write the Xaml to create a Grid panel of 3 rows and 3 columns.
+    Make the middle column width to 40.
+    Place a text box in the first colum and third row.
+    Place a list view in the third column and third row.
+Answer:
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="30" />
+			<ColumnDefinition Width="40" />
+			<ColumnDefinition Width="30" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+		</Grid.RowDefinitions>
+		<TextBox Grid.Row="2" TextWrapping="Wrap" Text="TextBox"/>
+		<ListView Grid.Column="2" Grid.Row="2"/>
+	</Grid>
+
+5 - In C#, a class can inherit from multiple parent classes. 
+Answer: B
+	A) True
+	B) False
+	
+6 - Which of the following statements about C# is not correct?
+Answer: D
+	A) A class can implement multiple interfaces.
+	B) An interface can have both function declarations and definitions.
+	C) A struct data variable cannot inherit from another struct.
+	D) In inheritance, if both the base class and the derived class have a function with the same name, 
+	   we can use the base keyword to implicitly call the function of the base class.
+	   
+7 - Which of the following statements about C# access modifiers is not correct?
+Answer: C
+	A) If a member variable is declared as public, it can be accessed across the entire application.
+	B) If a member variable is declared as private, it can only be accessed in the same class.
+	C) If a member variable is declared as protected, it can be accessed throughout the namespace.
+	D) If a member variable is declared as protected internal, 
+	   it can be accessed by classes in the name namespace and the classes that derive from it.
+	
+8 - Which of the following describes a class in which we have multiple functions with the same name 
+    which differ in the number of parameters and types of parameters they accept?
+Answer: A
+	A) Method overloading
+	B) Method overriding
+	C) Encapsulation
+	D) Abstraction
+
+9 - Which keyword must be used when a derived class is defining the implementation of a function that's present in the base class?
+Answer: D
+	A) New
+	B) Abstract
+	C) Virtual
+	D) Override
+
+10 - Which modifier makes a parent class method unaccessible to child classes?
+Answer: C
+	A) Protected
+	B) Internal
+	C) Private
+	D) Abstract
+
+11 - When creating C# interface, although it's optional, it is always good practice to add access modifiers for each method.
+Answer: B
+	A) True
+	B) False
+
+12 - When you create a console application and change the static Main(string[] args) to static main(string[] args), what will happen?
+Answer: B
+	A) Nothing - program should execute as usual
+	B) A runtime error is raised.
+	C) A compile-time error is raised.
+
+13 - A - Create a class that encapsulates an IEnumarable of integers and has a constructor to accept the initial collection. 
+     B - Write a function in the class that accepts 2 integers called lower boundry and upper boundry.
+         Function should filter out all values beyond these boundaries. 
+         After filtering the numbers, return the result as a list along with their average.
+     C - Add another function that accepts two integers called lower range and upper range.
+         Function should add all integers between lower and upper range to the collection and return the resulting list.  
+namespace final13
+{
+	public class Number : IEnumerable<int>, IEnumerator<int>
+    	{
+		private int number = new int number();
+		
+
+		public IEnumerator<int> GetEnumerator()
+        	{
+            		Reset();
+            		return this;
+        	}
+
+        	IEnumerator IEnumerable.GetEnumerator()
+        	{
+            		Reset();
+            		return this;
+        	}
+		
+		public bool Rang(int number)
+		{
+			if
+		}
+		
+	}
+
+}
+
+
+14 - The information needed to save a Student record in a system is Create a Student class with the following fields:
+        StudetID: string
+        StudentName: string
+        Email Address: string
+        Phone Number: string
+        Address: string
+        City: string 
+        Country: string
+        Postal Code: string
+        Registration Year: int
+        
+        A - Create a class to encapsulate this information.
+        B - Add a constructor that receives ID, Email address, name and registration year as parameters.
+        C - If the value of any one of those parameters is null or not provided, throw an invalid argument exception.
+        
+        D - Further validate the email address by applying the following rules and throw the same exception if it is invalid.
+        
+        An email address has 3 sections username, domain name and extension.
+        Username and domain name are separated with '@' character.
+        Domain name and extension are separated with the '.' character.
+        
+        - Username must start can include any english letter, numbers 0 to 9 and the '.' character, the hyphen '-' and underscore '_'
+        - Domain name can have english letters, numbers 0 to 9 and happen '-'
+        - Username and domain name must start and end with a letter or a number  
+        - Extension can only have english letters
+        - Assuming the email structure is username@domainname.extension
+        - Check that the email has all three sections: username, domainname and extension
+        
+        E - After creating the class, write the test cases for your constructor and write the code to call the constructor.
+            Mention the expected result for each test as a comment.
+    
+        Sample valid email addresses: brandon.brock_samuel@skate-rollers.net, z-aa@bbb.cccc, 1es@awesome-code.net
+        Sample invalid email addresses: @aa.bb, aa@ffg.gg-bb, -a@sos.com, actas1@sos-.com
+
+
+
+namespace final14
+{
+	public class Student
+	{
+		public string StudentId {get;set;}
+		public string StudentName {get;set;}
+		public string EmailAddress {get;set;}
+		public string PhoneNumber {get;set;}
+		public string Address {get;set;}
+		public string City {get;set;}
+		public string PostalCode {get;set;}
+		public int RegistrationYear {get;set;}
+		
+		public Student(string studentid)
+		{
+			this.studentid = studentid;
+		}
+		public Student(string studentid,string studentname,string emailaddress,string phonenumber,string address,string city,string postcode,int registrationyear)
+		{
+			this.studentid = studentid;
+			this.studentname = studentname;
+            		this.emailaddress = emailaddress;
+            		this.phoneNumber = phoneNumber;
+			this.address = address;
+			this.city = city;
+            		this.postcode = postcode;
+			this.registrationyear = registrationyear;
+		}	
+	}
+
+	public class StudentInformation : Student
+	{	
+		public string emailaddress;
+		public StudentInformation(string studentid) : base(studentid)
+		{
+			
+		}
+		public StudentInformation(string studentid,string studentname,int registrationyear)
+			:base(studentid, studentname, emailaddress, registrationyear)
+				{
+					this.studentid = studentid;
+					this.studentname = studentname;
+            				this.registrationyear = registrationyear;
+				}
+
+		public static  setEmailAddress(string emailaddress)
+		{
+			 string pattern =
+   				@"^([0-9a-zA-Z][\-\_\.]" + 
+   				@")+" +
+   				@"@(([0-9a-zA-Z][\-\_\.]*[0-9a-zA-Z][-]*\.)+[a-zA-Z]{2,17})$";
+			if (Regex.IsMatch(emailaddress, pattern))
+        		{
+            			if (Regex.Replace(emailaddress, pattern, string.Empty).Length == 0)
+            				{
+                				return this.emailaddress = emailaddress;
+            				}
+        		}
+        			return false;
+		}
+
+		public string getEmailaddress()
+		{
+			return emailaddress;
+		}
+	}
+	
+	class program
+	{
+		static void Main(string[] args)
+		{
+			new Program().StudentAccount();
+		}
+
+		private void StudentAccount()
+		{
+			var st1 = new StudentInformation("001","Jing","jj001@vcc.ca",2022);
+			var students = new List<Student>();
+			students.Add(st1);
+		}
+	}
+}
+
+
+
+        
+============================================================
+Q1 to Q12 -  5 points
+Q13       - 20 points
+Q14       - 20 points

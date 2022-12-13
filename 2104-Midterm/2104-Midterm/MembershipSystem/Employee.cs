@@ -40,7 +40,7 @@ namespace _2104_Midterm.MembershipSystem
             this.DepartmentID = DepartmentID;
         }
 
-        public  void DisplayProperties()
+        public void DisplayProperties()
         {
             Console.WriteLine(
                 String.Format(

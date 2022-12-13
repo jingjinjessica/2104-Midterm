@@ -46,8 +46,10 @@ namespace _2104_Midterm.MembershipSystem
         {
             List<Employee> employees = new List<Employee>();
             var item  = employees.Find(x => x.ID == id);
-            return item ;
-    
+            item.DisplayProperties() ;
+            return ;
+       
+       
         }
 
         public List<Employee> Get(string FirstName, string LastName)
